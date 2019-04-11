@@ -1,0 +1,34 @@
+
+select ?x ?y ?z
+where
+{
+  ?x ?y ?z .
+    }
+
+----------------------------------------------------------
+battle
+
+
+select ?s 
+where
+{
+  ?s  a <http://www.gameofthrones#Battle> 
+     }
+
+---------------------------------------------------
+used by
+
+select  ?s ?p 
+
+where
+
+{
+  ?s <http://www.gameofthrones#used_by> ?p
+     }
+---------------------------------------------------------------
+ruled by
+select ?s ?p
+where
+{
+  ?s <http://www.gameofthrones#owned_by> ?p
+     }
